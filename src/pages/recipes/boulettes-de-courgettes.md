@@ -17,7 +17,7 @@ ingredients:
   - sel
   - huile d'olive
 tags:
-  - Blanc d'oeuf
+  - blanc d'œuf
   - salé
 ---
 1. Peler et émincer finement l'oignon, le faire revenir dans une poêle huilée avec le curry. Sortir la plaque du four et le préchauffer à 180°C.
