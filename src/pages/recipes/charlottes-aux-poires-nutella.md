@@ -18,7 +18,6 @@ ingredients:
   - 60g de nutella
 tags:
   - sucré
-  - à tester
 ---
 1. Faire bouillir l'eau et le sucre (30g). Éplucher les poires et les couper en morceaux. Plonger les poires et cuire 10 minutes. Égoutter les poires en gardant le sirop et laisser refroidir.
 
