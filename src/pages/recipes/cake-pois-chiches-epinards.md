@@ -1,25 +1,26 @@
 ---
-templateKey: 'recipe-post'
+templateKey: recipe-post
 title: Cake pois-chiches épinards
 source: https://mesgougeresauxepinards.fr/fr/cake-pois-chiches-epinards/
 image: /img/cake-pois-chiches-epinards.jpg
 duration: 1h00
 servings: 6
 ingredients:
-- 3 œufs
-- 7cl d'huile végétale
-- 3cl d'huile d'olive
-- 10cl de lait
-- 180g de farine
-- 1 sachet de levure chimique
-- 100g de gruyère rapé
-- 100g de pois chiche
-- 100g d'épinard frais
-- 1/2 bûche de chèvre
-- 1cs de massala
-- sel
+  - 3 œufs
+  - 7cl d'huile végétale
+  - 3cl d'huile d'olive
+  - 10cl de lait
+  - 180g de farine
+  - 1 sachet de levure chimique
+  - 100g de gruyère rapé
+  - 100g de pois chiche
+  - 100g d'épinard frais
+  - 1/2 bûche de chèvre
+  - 1cs de massala
+  - sel
 tags:
   - salé
+  - végé
 ---
 1. Laver les épinards, les égoutter, les équeuter et les hacher grossièrement.
 
