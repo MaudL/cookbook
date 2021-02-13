@@ -15,6 +15,7 @@ ingredients:
   - poivre
 tags:
   - salé
+  - végé
 ---
 1. Si salsifis non achetés en boîte : faire bouillir de l'eau, les nettoyer, les couper en tronçons de 2cm de long et les plonger dans l'eau bouillante. Laisser cuire jusqu'à ce qu'il soit tendre (minutes ?).
 
