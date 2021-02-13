@@ -1,18 +1,19 @@
 ---
-templateKey: 'recipe-post'
+templateKey: recipe-post
 title: Socca aux carottes
 source: https://www.veganfreestyle.com/socca-revisitee/
 image: /img/socca-aux-carottes.jpg
 duration: 20min
 servings: 2
 ingredients:
-- 100g de farine de pois chiche
-- 20cl d'eau
-- 2cs d'huile d'olive
-- 1 pincée de sel
-- 2 carottes avec leurs fanes
+  - 100g de farine de pois chiche
+  - 20cl d'eau
+  - 2cs d'huile d'olive
+  - 1 pincée de sel
+  - 2 carottes avec leurs fanes
 tags:
   - salé
+  - végé
 ---
 1. Laver les carottes et les fanes. Découper les carottes en fines rondelles et émincer grossièrement les fanes.
 
