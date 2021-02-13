@@ -16,6 +16,7 @@ ingredients:
   - sel
 tags:
   - salé
+  - végé
 ---
 1. Laver les courgettes et émincez-les en fines tranches.
 
