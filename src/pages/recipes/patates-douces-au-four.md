@@ -1,21 +1,22 @@
 ---
-templateKey: 'recipe-post'
+templateKey: recipe-post
 title: Patates douces au four
 source: https://www.papillesetpupilles.fr/2018/10/patates-douces-au-four.html/
 image: /img/patates-douces-au-four.jpg
 duration: 1h15
 servings: 2
 ingredients:
-- 2 patates douces
-- 2cs d'huile d'olive
-- 1 pincée de sel
-- 1cc de citron
-- 0.5cc de thym
-- 0.5cc d'origan
-- 0.5cc de basilic
-- 0.5cc de romarin
+  - 2 patates douces
+  - 2cs d'huile d'olive
+  - 1 pincée de sel
+  - 1cc de citron
+  - 0.5cc de thym
+  - 0.5cc d'origan
+  - 0.5cc de basilic
+  - 0.5cc de romarin
 tags:
   - salé
+  - végé
 ---
 1. Préchauffer le four à 180°C. 
 
