@@ -1,21 +1,20 @@
 ---
-templateKey: 'recipe-post'
+templateKey: recipe-post
 title: Gougères au fromage
 source: https://gourmand.viepratique.fr/les-recettes-de-cyril-lignac/entree-les-recettes-de-cyril-lignac/gougeres-au-fromage-29870.html#post-29870
 image: /img/gougeres-au-fromage.jpg
-
 duration: 30min
 servings: 6
 ingredients:
-- 4 œufs 
-- 100g de gruyère rapé
-- 60g de beurre
-- 25cl d'eau
-- 150g de farine
-- sel
-
+  - 4 œufs
+  - 100g de gruyère rapé
+  - 60g de beurre
+  - 25cl d'eau
+  - 150g de farine
+  - sel
 tags:
   - salé
+  - végé
 ---
 1. Préchauffer le four à 210°C. Verser dans une casserole l'eau, le beurre coupé en morceau et le sel. Porter à ébullition.
 
