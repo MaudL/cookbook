@@ -1,22 +1,22 @@
 ---
-templateKey: 'recipe-post'
+templateKey: recipe-post
 title: Soufflé aux courgettes
 source: http://1234fillesauxfourneaux.over-blog.com/2016/08/souffle-aux-courgettes.html
 image: /img/souffle-aux-courgettes.jpg
 duration: 1h15
 servings: 4
 ingredients:
-- 300g de courgette
-- 4 oeufs
-- 60g de parmesan
-- 40g de gruyère rapé
-- 40cl de lait
-- 30g de beurre
-- 50g de farine
-- sel
-
+  - 300g de courgette
+  - 4 oeufs
+  - 60g de parmesan
+  - 40g de gruyère rapé
+  - 40cl de lait
+  - 30g de beurre
+  - 50g de farine
+  - sel
 tags:
   - salé
+  - végé
 ---
 1. Préchauffer le four à 210°C. Laver et râper la courgette.
 
