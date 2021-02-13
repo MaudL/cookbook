@@ -15,6 +15,7 @@ ingredients:
   - huile d'olive
 tags:
   - salé
+  - végé
 ---
 1. Cuire le boulgour comme indiqué sur le paquet. Ajouter le bouillon de cube (facultatif). 
 
