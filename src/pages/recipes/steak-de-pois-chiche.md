@@ -13,6 +13,7 @@ ingredients:
   - sel et poivre
 tags:
   - salé
+  - végé
 ---
 1. Préchauffez le four à th.6 (180°C).
 
