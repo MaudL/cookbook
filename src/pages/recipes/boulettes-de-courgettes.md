@@ -19,6 +19,7 @@ ingredients:
 tags:
   - blanc d'œuf
   - salé
+  - végé
 ---
 1. Peler et émincer finement l'oignon, le faire revenir dans une poêle huilée avec le curry. Sortir la plaque du four et le préchauffer à 180°C.
 
