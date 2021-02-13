@@ -1,20 +1,21 @@
 ---
-templateKey: 'recipe-post'
+templateKey: recipe-post
 title: Flan aux tomates séchées
 source: https://www.marmiton.org/recettes/recette_flan-a-la-farine-de-pois-chiches_38449.aspx
 image: /img/flan-aux-tomates-sechees.jpg
 duration: 35min
 servings: 2
 ingredients:
-- 2 oeufs
-- 75g de farine de pois chiche
-- 4cl d'huile d'olive
-- 4cl d'huile des tomates séchées
-- tomates séchées
-- 125ml de lait
-- thym
+  - 2 oeufs
+  - 75g de farine de pois chiche
+  - 4cl d'huile d'olive
+  - 4cl d'huile des tomates séchées
+  - tomates séchées
+  - 125ml de lait
+  - thym
 tags:
   - salé
+  - végé
 ---
 1. Préchauffer le four à 150°C.
 
