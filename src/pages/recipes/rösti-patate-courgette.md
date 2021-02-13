@@ -14,6 +14,7 @@ ingredients:
   - 3cs de Maïzena
 tags:
   - salé
+  - végé
 ---
 1. Éplucher et râper les courgettes, les patates et l'oignon. Mettre les légumes dans une passoire et saler. Laisser dégorger au moins une demi-heure.
 
