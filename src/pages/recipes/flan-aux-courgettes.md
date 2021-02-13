@@ -1,21 +1,21 @@
 ---
-templateKey: 'recipe-post'
+templateKey: recipe-post
 title: Flan aux courgettes
 source: https://www.marmiton.org/recettes/recette_flan-de-courgettes_23249.aspx
 image: /img/flan-aux-courgettes.jpg
 duration: 50min
 servings: 6
 ingredients:
-- 6 oeufs
-- 1kg de courgette
-- 60g de gruyère rapé
-- 40g de parmesan
-- 8cs de lait
-- huile d'olive
-- basilic
-
+  - 6 oeufs
+  - 1kg de courgette
+  - 60g de gruyère rapé
+  - 40g de parmesan
+  - 8cs de lait
+  - huile d'olive
+  - basilic
 tags:
   - salé
+  - végé
 ---
 1. Préchauffer le four à 180°C. Couper les courgettes en fines rondelles. Les faire revenir dans de l'huile d'olive. Saler et faire cuire environ 10 minutes à petit feu.
 
