@@ -15,12 +15,8 @@ ingredients:
 tags:
   - sucré
 ---
-1. Prélever le jus de deux oranges et le zeste d'une seule. Préchauffer le four à 175°.
-
+1. Prélever le jus de deux oranges et le zeste d'une seule. Préchauffer le four à 175°C.
 2. Fouettez les œufs avec le sucre.
-
 3. Ajouter les biscuits cuillère, le fromage blanc, le jus, le zeste et la levure. Mélanger.
-
 4. Beurrer des ramequins et verser la préparation.
-
 5. Enfourner pendant environ 40 minutes. Laissez tiédir, déguster tiède ou froid (saupoudré de sucre glace).
