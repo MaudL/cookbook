@@ -1,21 +1,22 @@
 ---
-templateKey: 'recipe-post'
+templateKey: recipe-post
 title: Muffin quinoa épinard
 source: http://fourneauxetfourchettes.fr/muffins-sales-tomates-sechees-epinards/
 image: /img/muffin-quinoa-epinard.jpg
 duration: 45min
 servings: 6
 ingredients:
-- 2 oeufs
-- 10 feuilles d'épinards
-- 110g de quinoa
-- 10 tomates séchées
-- 1cc de cumin
-- 1cs d'huile d'olive
-- 50g de gruyère
-- sel
+  - 2 oeufs
+  - 10 feuilles d'épinards
+  - 110g de quinoa
+  - 10 tomates séchées
+  - 1cc de cumin
+  - 1cs d'huile d'olive
+  - 50g de gruyère
+  - sel
 tags:
   - salé
+  - végé
 ---
 1. Cuire le quinoa. Préchauffer le four à 180°C.
 
