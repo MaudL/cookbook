@@ -17,6 +17,7 @@ ingredients:
   - 1cs de graines de sésame
 tags:
   - salé
+  - végé
 ---
 1. Dans une petite casserole, mélanger la sauce soja, l'huile de sésame, le vin blanc, le sucre et faire chauffer doucement jusqu'à frémissement. Ôter du feu et ajouter 4 feuilles de menthe. Laisser infuser et refroidir 30 minutes.
 
