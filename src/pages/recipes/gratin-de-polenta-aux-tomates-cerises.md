@@ -16,6 +16,7 @@ ingredients:
   - huile d'olive
 tags:
   - salé
+  - végé
 ---
 1. Préchauffer le four à 160°C chaleur tournante. Placer les tomates cerises dans un plat à gratin. Les napper d'un filet d'huile. Enfourner pour 20 minutes.
 
