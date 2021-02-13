@@ -15,7 +15,7 @@ ingredients:
   - 1 carré de chocolat noir
 tags:
   - salé
-  - blanc d’œuf
+  - blanc d'œuf
 ---
 1. Dans un bol, écraser la banane. Ajouter l'avoine, le cacao, la levure et mélanger. Ajouter le lait et le blanc d'oeuf, mélanger.
 
