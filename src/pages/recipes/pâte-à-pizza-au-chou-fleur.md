@@ -14,6 +14,7 @@ ingredients:
   - 1 pincée de poivre
 tags:
   - salé
+  - végé
 ---
 
 
