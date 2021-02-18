@@ -25,6 +25,7 @@ ingredients:
   - 150g de chocolat noir
   - 200g de crème liquide 30%MG (chantilly)
   - 100g de crème liquide 30%MG (chocolat)
+  - 4g de feuille de gélatine
   - "Pour les coques en chocolat :"
   - 60g de chocolat lait
 tags:
