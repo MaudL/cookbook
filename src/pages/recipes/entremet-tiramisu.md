@@ -46,4 +46,17 @@ Pour le sirop d'imbibage :
 
 Pour la mousse mascarpone :
 
-1. Mettre la gélatine à tremper dans un grand bol d'eau froide.
+1. Mettre la gélatine à tremper dans un grand bol d'eau froide. Préparer le fouet électrique.
+2. Prendre un saladier qui passe au bain-marie. Verser le sucre, l'eau et les jaunes dans le saladier et le placer au bain-marie. Mélanger en continu à l'aide d'un fouet et cuire à 84°C. Mettre la crème liquide dans un saladier au congélateur.
+3.  Une fois la température atteinte, retirer du feu et ajouter la gélatine égouttée. Monter le tout à l'aide d'un fouet électrique (la préparation blanchit et augmente de volume).
+4. Ajouter le mascarpone et fouetter.
+5. Sortir le saladier/crème du congélateur et monter la crème en chantilly/
+6. Verser la moitié de la chantilly dans la préparation mascarpone en mélangeant avec une maryse. Ajouter le reste et mélanger à nouveau.
+
+Montage :
+
+1. Imbiber les biscuits cuillères.
+
+2. Dans le fond du moule, mettre de la crème puis la ganache et un biscuit cuillère. Remettre de la mousse et finir par le biscuit cuillère.
+
+3. Congeler toute une nuit. Démouler l'entremet et le saupoudrer de caco amer. Laisser décongeler au moins 4h au frigo et 30 minutes à température ambiante.
