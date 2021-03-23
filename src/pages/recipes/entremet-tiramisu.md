@@ -20,6 +20,7 @@ ingredients:
   - "Pour la mousse mascarpone :"
   - 4g de gélatine
   - 2 gros jaunes d'oeufs
+  - 50g de sucre
   - 35g d'eau
   - 250g de mascarpone
   - 300g de crème liquide entière 30% MG
