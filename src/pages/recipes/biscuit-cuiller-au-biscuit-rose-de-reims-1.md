@@ -1,6 +1,6 @@
 ---
 templateKey: recipe-post
-title: Biscuit cuiller au biscuit rose de Reims
+title: Biscuit cuiller rose de Reims
 source: https://www.encoreungateau.com/rose-bonbon/
 image: /static/img/cuiller-rose-avant-cuisson.jpg
 duration: 25min
