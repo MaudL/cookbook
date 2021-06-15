@@ -59,7 +59,7 @@ export default function IndexPage({ data }: Props) {
     id: edge.node.id,
     title: edge.node.frontmatter.title,
     tags: edge.node.frontmatter.tags,
-    image: edge.node.frontmatter.image.childImageSharp.fluid.src,
+    image: edge.node.frontmatter.image?.childImageSharp.fluid.src,
     url: edge.node.fields.slug,
   }))
 
