@@ -116,7 +116,7 @@ interface RecipePostTemplateProps {
   duration: string
   servings: number
   ingredients: string[]
-  image: string
+  image?: string
   tags: string[]
   contentComponent?: FunctionComponent<{ content: string | ReactNode }>
   helmet?: ReactNode
@@ -200,7 +200,7 @@ export default function RecipePost({ data }: Props) {
       duration={recipe.frontmatter.duration}
       servings={recipe.frontmatter.servings}
       ingredients={recipe.frontmatter.ingredients}
-      image={recipe.frontmatter.image.childImageSharp.fluid.src}
+      image={recipe.frontmatter.image?.childImageSharp.fluid.src}
       tags={recipe.frontmatter.tags}
       title={recipe.frontmatter.title}
     />
