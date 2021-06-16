@@ -2,11 +2,11 @@ backend:
   name: github
   repo: JulienUsson/cookbook-gatsby
   commit_messages:
-    create: 'Create {{collection}} “{{slug}}”'
-    update: 'Update {{collection}} “{{slug}}”'
-    delete: 'Delete {{collection}} “{{slug}}”'
-    uploadMedia: '[skip ci] Upload “{{path}}”'
-    deleteMedia: '[skip ci] Delete “{{path}}”'
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
 
 media_folder: static/img
 
@@ -17,15 +17,30 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "recipe-post"}
-      - {label: "Titre", name: "title", widget: "string"}
-      - {label: "Source", name: "source", widget: "string", required: false}
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Durée", name: "duration", widget: "string"}
-      - {label: "Nombre de personnes", name: "servings", widget: "number"}
-      - {label: "Ingrédients", name: "ingredients", widget: "list"}
-      - {label: "Recette", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "recipe-post",
+        }
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Source", name: "source", widget: "string", required: false }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Durée", name: "duration", widget: "string" }
+      - { label: "Nombre de personnes", name: "servings", widget: "number" }
+      - { label: "Ingrédients", name: "ingredients", widget: "list" }
+      - {
+          label: "Sous recettes",
+          name: "subRecipes",
+          widget: "list",
+          fields:
+            [
+              { label: "Titre", name: "title", widget: "string" },
+              { label: "Ingrédients", name: "ingredients", widget: "list" },
+            ],
+        }
+      - { label: "Recette", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list" }
 
   - name: "pages"
     label: "Pages"
@@ -34,6 +49,11 @@ collections:
         label: "Accueil"
         name: "index"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Titre, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "index-page",
+            }
+          - { label: Titre, name: title, widget: string }
+          - { label: Image, name: image, widget: image }

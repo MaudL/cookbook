@@ -31,7 +31,8 @@
     "netlify-cms-media-library-uploadcare": "^0.5.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "typescript": "^4.3.2"
   },
   "scripts": {
     "clean": "gatsby clean",
@@ -39,7 +40,8 @@
     "build": "npm run clean && gatsby build",
     "develop": "npm run clean && gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.{tsx,ts,js},src/**/*.{tsx,ts,js}}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typecheck": "tsc"
   },
   "devDependencies": {
     "@types/node": "^13.11.1",

@@ -106,7 +106,7 @@ export default function IndexPage({ data }: Props) {
       >
         <HeroTitle>{data.markdownRemark.frontmatter.title}</HeroTitle>
         <Search
-          tags={tags}
+          tags={tags || []}
           onSearchChange={setSearchString}
           onTagsChange={setSelectedTags}
         />

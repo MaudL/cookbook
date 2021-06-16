@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from "react";
-import { Typography, IconButton, styled } from "@material-ui/core";
+import { Typography, IconButton, styled, Box } from "@material-ui/core";
 import PlusIcon from "@material-ui/icons/Add";
 import MinusIcon from "@material-ui/icons/Remove";
 
@@ -44,6 +44,10 @@ const Unit = styled("span")({
 interface Props {
   ingredients: string[];
   servings: number;
+  subRecipes?: {
+    title?: string,
+    ingredients?: string[]
+  }[]
 }
 
 function formatNumber(number: number): string {
@@ -55,24 +59,14 @@ function formatNumber(number: number): string {
 }
 
 export default function Ingredients({
-  ingredients: ingredientsProp,
+  ingredients,
   servings: servingsProp,
+  subRecipes
 }: Props) {
   const [servings, setServings] = useState<number>(servingsProp);
   useEffect(() => {
     setServings(servingsProp);
   }, [servingsProp]);
-
-  const parsedIngredients = useMemo(
-    () => ingredientsProp.map(strToIngredient).filter((x) => x) as Ingredient[],
-    [ingredientsProp, servings, servingsProp]
-  );
-  const ingredients = useMemo(() => {
-    return parsedIngredients.map((i) => ({
-      ...i,
-      quantity: i.quantity && (i.quantity * servings) / servingsProp,
-    }));
-  }, [parsedIngredients, servings, servingsProp]);
 
   return (
     <div>
@@ -94,18 +88,46 @@ export default function Ingredients({
         </IconButton>
       </ServingsSelector>
       <Typography variant="h6">Ingrédients :</Typography>
-      {ingredients.map((ingredient, index) => (
-        <Typography key={index}>
-          -{" "}
-          {ingredient.quantity && (
-            <Unit>
-              {formatNumber(ingredient.quantity)}
-              {ingredient.unit}{" "}
-            </Unit>
-          )}
-          {ingredient.name}
-        </Typography>
-      ))}
+      <IngredientsList ingredients={ingredients} quantityFactor={servings / servingsProp} />
+      {subRecipes?.map(subRecipe =>
+        <Box mt={1}>
+          <Typography variant="subtitle1">{subRecipe.title}</Typography>
+          <IngredientsList ingredients={subRecipe.ingredients} quantityFactor={servings / servingsProp} />
+        </Box>
+      )}
     </div>
   );
+}
+
+interface IngredientsListProps {
+  ingredients?: string[];
+  quantityFactor: number
+}
+
+function IngredientsList({ ingredients: ingredientsProp, quantityFactor }: IngredientsListProps) {
+  const parsedIngredients = useMemo(
+    () => (ingredientsProp || []).map(strToIngredient).filter((x) => x) as Ingredient[],
+    [ingredientsProp]
+  );
+  const ingredients = useMemo(() => {
+    return parsedIngredients.map((i) => ({
+      ...i,
+      quantity: i.quantity && (i.quantity * quantityFactor),
+    }));
+  }, [parsedIngredients, quantityFactor]);
+
+  return <>
+    {ingredients.map((ingredient, index) => (
+      <Typography key={index}>
+        -{" "}
+        {ingredient.quantity && (
+          <Unit>
+            {formatNumber(ingredient.quantity)}
+            {ingredient.unit}{" "}
+          </Unit>
+        )}
+        {ingredient.name}
+      </Typography>
+    ))}
+  </>
 }

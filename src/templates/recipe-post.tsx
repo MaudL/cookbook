@@ -116,9 +116,13 @@ interface RecipePostTemplateProps {
   duration: string
   servings: number
   ingredients: string[]
+  subRecipes?: {
+    title?: string,
+    ingredients?: string[]
+  }[]
   image?: string
   tags: string[]
-  contentComponent?: FunctionComponent<{ content: string | ReactNode }>
+  contentComponent?: FunctionComponent<{ content: any }>
   helmet?: ReactNode
 }
 
@@ -132,6 +136,7 @@ export const RecipePostTemplate = ({
   duration,
   servings,
   ingredients,
+  subRecipes,
   image,
   tags,
   helmet,
@@ -163,7 +168,7 @@ export const RecipePostTemplate = ({
               {duration}
             </Typography>
           )}
-          <Ingredients ingredients={ingredients} servings={servings} />
+          <Ingredients ingredients={ingredients} servings={servings} subRecipes={subRecipes} />
         </LeftPanelContent>
       </LeftPanel>
 
