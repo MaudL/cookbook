@@ -11,10 +11,17 @@ module.exports = {
         name: 'uploads',
       },
     },
-    'gatsby-plugin-top-layout',
-    'gatsby-plugin-material-ui',
     'gatsby-plugin-typescript',
     'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Baloo+Thambi+2'],
+        },
+      },
+    },
+    'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

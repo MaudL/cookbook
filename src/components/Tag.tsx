@@ -1,32 +1,29 @@
-import React from "react";
-import {
-  Chip,
-  ChipProps,
-  createMuiTheme,
-  ThemeProvider,
-} from "@material-ui/core";
-import toMaterialStyle from "material-color-hash";
+import clsx from 'clsx'
+import toMaterialStyle from 'material-color-hash'
+import React, { MouseEvent } from 'react'
 
-interface Props extends Omit<ChipProps, "label" | "variant" | "color"> {
-  name: string;
-  color?: string;
-  selected?: boolean;
+interface Props {
+  name: string
+  selected?: boolean
+  color?: string
+  onClick?: (e: MouseEvent<HTMLButtonElement>) => void
 }
 
-export default function Tag({ name, selected, color, ...props }: Props) {
-  const theme = createMuiTheme({
-    palette: {
-      primary: { main: color || toMaterialStyle(name, 700).backgroundColor },
-    },
-  });
+export default function Tag({ name, selected, color: colorProp, onClick }: Props) {
+  const colorHash = toMaterialStyle(name, 700).backgroundColor
+  const color = colorProp ?? colorHash
   return (
-    <ThemeProvider theme={theme}>
-      <Chip
-        variant={selected ? "default" : "outlined"}
-        color="primary"
-        label={name}
-        {...props}
-      />
-    </ThemeProvider>
-  );
+    <button
+      className="border rounded-full px-3 text-white text-sm"
+      style={{
+        backgroundColor: selected ? colorHash : undefined,
+        color: selected ? '#fff' : color,
+        borderColor: selected ? colorHash : color,
+      }}
+      onClick={onClick}
+      disabled={!onClick}
+    >
+      {name}
+    </button>
+  )
 }

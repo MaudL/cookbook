@@ -1,6 +1,6 @@
 import CMS from 'netlify-cms-app'
-import uploadcare from 'netlify-cms-media-library-uploadcare'
 import cloudinary from 'netlify-cms-media-library-cloudinary'
+import uploadcare from 'netlify-cms-media-library-uploadcare'
 
 import RecipePostPreview from './preview-templates/RecipePostPreview'
 
