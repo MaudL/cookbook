@@ -1,12 +1,11 @@
-import React, { ReactNode } from 'react'
-import { Typography } from '@material-ui/core'
+import React from 'react'
 
 export const HTMLContent = ({ content }: { content: any }) => (
-  <Typography dangerouslySetInnerHTML={{ __html: content }} />
+  <div className="text-lg px-8 py-4" dangerouslySetInnerHTML={{ __html: content }} />
 )
 
 const Content = ({ content }: { content: any }) => (
-  <Typography>{content}</Typography>
+  <div className="text-lg px-8 py-4">{content}</div>
 )
 
 export default Content

@@ -1,40 +1,12 @@
-import React, { useState, useMemo } from 'react'
-import { Typography, styled, Link as MuiLink, Box } from '@material-ui/core'
-import { graphql } from 'gatsby'
-import Search from '../components/Search'
 import Fuse from 'fuse.js'
+import { graphql } from 'gatsby'
+import React, { useState, useMemo } from 'react'
 import Helmet from 'react-helmet'
+
+import Footer from '../components/Footer'
+import Hero from '../components/Hero'
+
 import RecipesList from '../components/RecipesList'
-
-const Root = styled('div')({
-  minHeight: '100vh',
-  display: 'flex',
-  flexDirection: 'column',
-})
-
-type HeroProps = { image: string }
-const Hero = styled(({ image: _, ...props }: HeroProps) => <div {...props} />)({
-  backgroundImage: ({ image }: HeroProps) => `url(${image})`,
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  height: '50vh',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  paddingBottom: '10vh',
-  flexDirection: 'column',
-})
-
-const HeroTitle = styled(props => (
-  <Typography align="center" variant="h2" {...props} />
-))(({ theme }) => ({
-  color: theme.palette.common.white,
-  textShadow: '1px 1px #000',
-  marginBottom: theme.spacing(2),
-  [theme.breakpoints.only('xs')]: {
-    fontSize: '2rem',
-  },
-}))
 
 const fuseOptions = {
   limit: 10,
@@ -87,9 +59,7 @@ export default function IndexPage({ data }: Props) {
 
     if (selectedTags.length > 0) {
       return filteredBySearchString.filter(
-        r =>
-          r.tags.filter(t => selectedTags.some(st => st === t)).length ===
-          selectedTags.length
+        r => r.tags.filter(t => selectedTags.some(st => st === t)).length === selectedTags.length,
       )
     } else {
       return filteredBySearchString
@@ -97,44 +67,23 @@ export default function IndexPage({ data }: Props) {
   }, [recipes, searchString, selectedTags])
 
   return (
-    <Root>
+    <>
       <Helmet>
         <title>{data.markdownRemark.frontmatter.title}</title>
       </Helmet>
+
       <Hero
+        title={data.markdownRemark.frontmatter.title}
         image={data.markdownRemark.frontmatter.image.childImageSharp.fluid.src}
-      >
-        <HeroTitle>{data.markdownRemark.frontmatter.title}</HeroTitle>
-        <Search
-          tags={tags || []}
-          onSearchChange={setSearchString}
-          onTagsChange={setSelectedTags}
-        />
-      </Hero>
+        tags={tags || []}
+        onSearchChange={setSearchString}
+        onTagsChange={setSelectedTags}
+      />
 
       <RecipesList recipes={filteredRecipes} selectedTags={selectedTags} />
 
-      <Box flexGrow={1} />
-      <Box mb={4} width="100%">
-        <Typography variant="subtitle1" align="center">
-          Fait avec amour par{' '}
-          <MuiLink
-            href="https://github.com/JulienUsson/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Julien Usson
-          </MuiLink>
-        </Typography>
-        <Typography variant="caption" align="center">
-          <div>
-            <MuiLink href="/admin/" color="textSecondary">
-              Admin
-            </MuiLink>
-          </div>
-        </Typography>
-      </Box>
-    </Root>
+      <Footer />
+    </>
   )
 }
 
@@ -182,9 +131,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "recipe-post" } } }
-    ) {
+    allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "recipe-post" } } }) {
       edges {
         node {
           id

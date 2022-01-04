@@ -1,15 +1,5 @@
 import React from 'react'
-import { Typography, Box } from '@material-ui/core'
 
-const NotFoundPage = () => (
-  <Box
-    display="flex"
-    height="100vh"
-    justifyContent="center"
-    alignItems="center"
-  >
-    <Typography variant="h3">404 - NOT FOUND</Typography>
-  </Box>
-)
+const NotFoundPage = () => <h1>404 - NOT FOUND</h1>
 
 export default NotFoundPage

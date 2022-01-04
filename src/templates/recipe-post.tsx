@@ -1,114 +1,11 @@
+import BackIcon from '@heroicons/react/solid/ChevronLeftIcon'
+import { graphql, Link } from 'gatsby'
 import React, { ReactNode, FunctionComponent } from 'react'
 import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
-import { styled, Theme, Button, Typography, Box } from '@material-ui/core'
-import Tag from '../components/Tag'
-import BackIcon from '@material-ui/icons/ArrowBackIos'
-import Ingredients from '../components/Ingredients'
+
 import Content, { HTMLContent } from '../components/Content'
-
-const Root = styled('div')(({ theme }) => ({
-  display: 'flex',
-  flexDirection: 'column',
-  backgroundColor: '#FFFBFB',
-  [theme.breakpoints.up('md')]: {
-    height: '100vh',
-    flexDirection: 'row',
-  },
-}))
-
-const LeftPanel = styled('div')(({ theme }) => ({
-  display: 'flex',
-  flexDirection: 'column',
-  [theme.breakpoints.up('md')]: {
-    padding: theme.spacing(1),
-    overflowY: 'auto',
-    backgroundColor: '#5D3352 ',
-    color: theme.palette.common.white,
-    '& *': {
-      color: theme.palette.common.white,
-    },
-    boxShadow: theme.shadows[4],
-    minWidth: 300,
-    maxWidth: 300,
-    marginRight: theme.spacing(2),
-  },
-}))
-
-const LeftPanelContent = styled('div')(({ theme }) => ({
-  [theme.breakpoints.down('sm')]: {
-    backgroundColor: '#5D3352',
-    color: theme.palette.common.white,
-    '& *': {
-      color: theme.palette.common.white,
-    },
-    boxShadow: theme.shadows[4],
-    padding: theme.spacing(2),
-  },
-  [theme.breakpoints.up('md')]: {
-    marginTop: theme.spacing(4),
-    padding: theme.spacing(0, 4, 0, 2),
-  },
-}))
-
-const Body = styled('div')(({ theme }) => ({
-  flexGrow: 1,
-  overflowY: 'auto',
-  textAlign: 'justify',
-  padding: theme.spacing(2),
-}))
-
-const TitleContainer = styled('div')(({ theme }) => ({
-  display: 'flex',
-  flexDirection: 'row',
-}))
-
-type ImageProps = { src: string }
-const Image = styled(({ src, ...props }: ImageProps) => <div {...props} />)(
-  ({ theme, src }: ImageProps & { theme: Theme }) => ({
-    [theme.breakpoints.up('md')]: {
-      height: 150,
-    },
-    height: 300,
-    width: '100%',
-    backgroundImage: `url(${src})`,
-    backgroundPosition: 'center',
-    backgroundSize: 'contain',
-    backgroundRepeat: 'no-repeat',
-  })
-)
-
-const TagsContainer = styled('div')(({ theme }) => ({
-  '& > *': {
-    marginRight: theme.spacing(1),
-  },
-}))
-
-type TitleProps = { title: string; tags: string[] }
-function Title({ title, tags }: TitleProps) {
-  return (
-    <>
-      <TitleContainer>
-        <Typography variant="h2" align="left">
-          {title}
-        </Typography>
-      </TitleContainer>
-      <TagsContainer>
-        {tags.map(tag => (
-          <Tag key={tag} name={tag} />
-        ))}
-      </TagsContainer>
-    </>
-  )
-}
-
-function BackToHome() {
-  return (
-    <Link to="/">
-      <Button startIcon={<BackIcon />}>Retour</Button>
-    </Link>
-  )
-}
+import Ingredients from '../components/Ingredients'
+import Tag from '../components/Tag'
 
 interface RecipePostTemplateProps {
   content: string | ReactNode
@@ -117,7 +14,7 @@ interface RecipePostTemplateProps {
   servings: number
   ingredients: string[]
   subRecipes?: {
-    title?: string,
+    title?: string
     ingredients?: string[]
   }[]
   image?: string
@@ -125,9 +22,6 @@ interface RecipePostTemplateProps {
   contentComponent?: FunctionComponent<{ content: any }>
   helmet?: ReactNode
 }
-
-const visibleOnlyOnMobile = { xs: 'block', sm: 'block', md: 'none' }
-const hiddenOnlyOnMobile = { xs: 'none', sm: 'none', md: 'block' }
 
 export const RecipePostTemplate = ({
   content,
@@ -144,49 +38,37 @@ export const RecipePostTemplate = ({
   const RecipeContent = contentComponent || Content
 
   return (
-    <Root>
+    <div className="flex flex-col md:flex-row">
       {helmet || ''}
-      <Box p={2} display={visibleOnlyOnMobile}>
-        <BackToHome />
-        <Title title={title} tags={tags} />
-      </Box>
-      <LeftPanel>
-        <Box display={hiddenOnlyOnMobile}>
-          <BackToHome />
-        </Box>
-        <LeftPanelContent>
-          <Box display={hiddenOnlyOnMobile}>
-            <Box display="flex" justifyContent="center" py={1}>
-              {image && <Image src={image} />}
-            </Box>
-          </Box>
-          {duration && (
-            <Typography variant="subtitle1">
-              <Typography variant="h6" component="span">
-                Durée :{' '}
-              </Typography>
-              {duration}
-            </Typography>
-          )}
-          <Ingredients ingredients={ingredients} servings={servings} subRecipes={subRecipes} />
-        </LeftPanelContent>
-      </LeftPanel>
+      <div className="left-panel md:min-w-[300px] md:max-w-[300px] md:h-screen p-8 bg-purple-700 text-white text-xl space-y-4">
+        <Link to="/">
+          <BackIcon className="h-5 w-5 inline" /> Retour
+        </Link>
+        {image && (
+          <div
+            className="h-80 md:h-48 bg-center bg-cover"
+            style={{ backgroundImage: `url(${image})` }}
+          />
+        )}
+        {duration && (
+          <p>
+            <span className="font-bold">Durée :</span> {duration}
+          </p>
+        )}
+        <Ingredients ingredients={ingredients} servings={servings} subRecipes={subRecipes} />
+      </div>
 
-      <Body>
-        <Box display={hiddenOnlyOnMobile}>
-          <Title title={title} tags={tags} />
-        </Box>
-
-        <Box display={visibleOnlyOnMobile}>
-          <Box display="flex" justifyContent="center" py={1}>
-            {image && <Image src={image} />}
-          </Box>
-        </Box>
-        <Box display={hiddenOnlyOnMobile} pt={4} />
+      <div className="p-8 h-screen md:overflow-y-auto">
+        <p className="text-6xl mb-1">{title}</p>
+        <div className="spacing-x-2 mb-4">
+          {tags.map(tag => (
+            <Tag key={tag} name={tag} />
+          ))}
+        </div>
 
         <RecipeContent content={content} />
-      </Body>
-    </Root>
+      </div>
+    </div>
   )
 }
 
@@ -199,7 +81,7 @@ export default function RecipePost({ data }: Props) {
       contentComponent={HTMLContent}
       helmet={
         <Helmet>
-          <title>{`${recipe.frontmatter.title}`}</title>
+          <title>{recipe.frontmatter.title}</title>
         </Helmet>
       }
       duration={recipe.frontmatter.duration}
