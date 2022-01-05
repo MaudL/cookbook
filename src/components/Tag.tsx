@@ -1,4 +1,3 @@
-import clsx from 'clsx'
 import toMaterialStyle from 'material-color-hash'
 import React, { MouseEvent } from 'react'
 

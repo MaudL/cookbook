@@ -1,5 +1,6 @@
 import Fuse from 'fuse.js'
 import { graphql } from 'gatsby'
+import { IGatsbyImageData } from 'gatsby-plugin-image'
 import React, { useState, useMemo } from 'react'
 import Helmet from 'react-helmet'
 
@@ -19,7 +20,7 @@ export interface Recipe {
   id: string
   title: string
   tags: string[]
-  image: string
+  image?: IGatsbyImageData
   url: string
 }
 
@@ -27,11 +28,11 @@ export default function IndexPage({ data }: Props) {
   const [searchString, setSearchString] = useState('')
   const [selectedTags, setSelectedTags] = useState<string[]>([])
 
-  const recipes: Recipe[] = data.allMarkdownRemark.edges.map(edge => ({
+  const recipes: Recipe[] = data.allMarkdownRemark.edges.map((edge) => ({
     id: edge.node.id,
     title: edge.node.frontmatter.title,
     tags: edge.node.frontmatter.tags,
-    image: edge.node.frontmatter.image?.childImageSharp.fluid.src,
+    image: edge.node.frontmatter.image?.childImageSharp.gatsbyImageData,
     url: edge.node.fields.slug,
   }))
 
@@ -40,7 +41,7 @@ export default function IndexPage({ data }: Props) {
       return undefined
     }
     const tags = recipes.reduce((acc, recipe) => {
-      recipe.tags.forEach(t => acc.add(t))
+      recipe.tags.forEach((t) => acc.add(t))
       return acc
     }, new Set<string>())
     return [...tags].sort()
@@ -59,7 +60,8 @@ export default function IndexPage({ data }: Props) {
 
     if (selectedTags.length > 0) {
       return filteredBySearchString.filter(
-        r => r.tags.filter(t => selectedTags.some(st => st === t)).length === selectedTags.length,
+        (r) =>
+          r.tags.filter((t) => selectedTags.some((st) => st === t)).length === selectedTags.length,
       )
     } else {
       return filteredBySearchString
@@ -74,7 +76,6 @@ export default function IndexPage({ data }: Props) {
 
       <Hero
         title={data.markdownRemark.frontmatter.title}
-        image={data.markdownRemark.frontmatter.image.childImageSharp.fluid.src}
         tags={tags || []}
         onSearchChange={setSearchString}
         onTagsChange={setSelectedTags}
@@ -92,9 +93,6 @@ interface Props {
     markdownRemark: {
       frontmatter: {
         title: string
-        image: {
-          childImageSharp: { fluid: { src: string } }
-        }
       }
     }
     allMarkdownRemark: {
@@ -107,8 +105,10 @@ interface Props {
           frontmatter: {
             title: string
             tags: string[]
-            image: {
-              childImageSharp: { fluid: { src: string } }
+            image?: {
+              childImageSharp: {
+                gatsbyImageData: IGatsbyImageData
+              }
             }
           }
         }
@@ -124,9 +124,7 @@ export const pageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
       }
@@ -143,9 +141,7 @@ export const pageQuery = graphql`
             tags
             image {
               childImageSharp {
-                fluid(maxWidth: 512, quality: 80) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: FULL_WIDTH)
               }
             }
           }

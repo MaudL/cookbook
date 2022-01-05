@@ -13,14 +13,6 @@ module.exports = {
     },
     'gatsby-plugin-typescript',
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Baloo+Thambi+2'],
-        },
-      },
-    },
     'gatsby-plugin-postcss',
     {
       resolve: `gatsby-plugin-purgecss`,

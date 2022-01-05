@@ -1,5 +1,6 @@
 import BackIcon from '@heroicons/react/solid/ChevronLeftIcon'
 import { graphql, Link } from 'gatsby'
+import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image'
 import React, { ReactNode, FunctionComponent } from 'react'
 import Helmet from 'react-helmet'
 
@@ -18,7 +19,7 @@ interface RecipePostTemplateProps {
     title?: string
     ingredients?: string[]
   }[]
-  image?: string
+  image?: IGatsbyImageData | string
   tags: string[]
   contentComponent?: FunctionComponent<{ content: any }>
   helmet?: ReactNode
@@ -42,16 +43,15 @@ export const RecipePostTemplate = ({
   return (
     <div className="flex flex-col md:flex-row">
       {helmet || ''}
-      <div className="left-panel md:min-w-[300px] md:max-w-[300px] md:h-screen p-8 bg-sky-500 text-white text-xl space-y-4">
+      <div className="bg-food md:min-w-[300px] md:max-w-[300px] md:h-screen p-8 text-white text-xl space-y-4">
         <Link to="/">
           <BackIcon className="h-5 w-5 inline" /> Retour
         </Link>
-        {image && (
-          <div
-            className="h-48 bg-center bg-cover rounded-md border border-white"
-            style={{ backgroundImage: `url(${image})` }}
-          />
-        )}
+        {typeof image === 'string' ? (
+          <img className="h-48 w-full object-cover rounded-md border border-white" src={image} />
+        ) : image ? (
+          <GatsbyImage className="h-48 rounded-md border border-white" image={image} alt={title} />
+        ) : null}
         {duration && (
           <p>
             <span className="font-bold">Durée :</span> {duration}
@@ -70,7 +70,7 @@ export const RecipePostTemplate = ({
           <p className="text-gray-300">{source}</p>
         ) : null}
         <div className="flex flex-wrap gap-1 mb-4  mt-1">
-          {tags.map(tag => (
+          {tags.map((tag) => (
             <Tag key={tag} name={tag} />
           ))}
         </div>
@@ -96,7 +96,7 @@ export default function RecipePost({ data }: Props) {
       duration={recipe.frontmatter.duration}
       servings={recipe.frontmatter.servings}
       ingredients={recipe.frontmatter.ingredients}
-      image={recipe.frontmatter.image?.childImageSharp.fluid.src}
+      image={recipe.frontmatter.image?.childImageSharp.gatsbyImageData}
       tags={recipe.frontmatter.tags}
       title={recipe.frontmatter.title}
       source={recipe.frontmatter.source}
@@ -115,8 +115,10 @@ interface Props {
         duration: string
         servings: number
         ingredients: string[]
-        image: {
-          childImageSharp: { fluid: { src: string } }
+        image?: {
+          childImageSharp: {
+            gatsbyImageData: IGatsbyImageData
+          }
         }
         tags: string[]
       }
@@ -137,9 +139,7 @@ export const pageQuery = graphql`
         ingredients
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
         tags

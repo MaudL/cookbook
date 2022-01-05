@@ -75,7 +75,7 @@ export default function Ingredients({ ingredients, servings: servingsProp, subRe
       <div>
         <p className="font-bold">Ingrédients :</p>
         <IngredientsList ingredients={ingredients} quantityFactor={servings / servingsProp} />
-        {subRecipes?.map(subRecipe => (
+        {subRecipes?.map((subRecipe) => (
           <Fragment key={subRecipe.title}>
             <p>{subRecipe.title}</p>
             <IngredientsList
@@ -96,11 +96,11 @@ interface IngredientsListProps {
 
 function IngredientsList({ ingredients: ingredientsProp, quantityFactor }: IngredientsListProps) {
   const parsedIngredients = useMemo(
-    () => (ingredientsProp || []).map(strToIngredient).filter(x => x) as Ingredient[],
+    () => (ingredientsProp || []).map(strToIngredient).filter((x) => x) as Ingredient[],
     [ingredientsProp],
   )
   const ingredients = useMemo(() => {
-    return parsedIngredients.map(i => ({
+    return parsedIngredients.map((i) => ({
       ...i,
       quantity: i.quantity && i.quantity * quantityFactor,
     }))
