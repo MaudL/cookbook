@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Blinis
 source: ""
-image: https://www.atelierdeschefs.com/media/recette-e25555-blinis-maison-saumon-et-creme-de-chevre.jpg
+image: /img/blinis.jpg
 duration: 30min
 servings: 6
 ingredients:
