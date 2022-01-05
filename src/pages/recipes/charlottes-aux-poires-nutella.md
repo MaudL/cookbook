@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Charlottes aux poires - nutella
 source: https://www.instagram.com/p/B_E3RhbBO_K/
-image: /static/img/charlotte-aux-poires-et-au-nutella.jpeg
+image: /img/charlotte-aux-poires-et-au-nutella.jpeg
 duration: 3h
 servings: 6
 ingredients:

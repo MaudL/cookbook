@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Soupe de cresson
 source: https://cuisine.journaldesfemmes.fr/recette/1014794-veloute-de-cresson
-image: /static/img/i148405-soupe-de-cresson.jpeg
+image: /img/i148405-soupe-de-cresson.jpeg
 duration: 30min
 servings: 2
 ingredients:

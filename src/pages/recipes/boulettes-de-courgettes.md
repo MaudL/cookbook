@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Boulettes de courgettes
 source: http://www.amandinecooking.com/2017/04/boulettes-de-courgette-a-l-oignon-curry-et-flocons-d-avoine.html
-image: /static/img/img_20200513_122933.jpg
+image: /img/img_20200513_122933.jpg
 duration: 30min
 servings: 4
 ingredients:

@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Gâteau de foie de volaille
 source: https://www.cuisineaz.com/recettes/gateau-de-foies-de-volaille-12447.aspx
-image: /static/img/volaille.jpg
+image: /img/volaille.jpg
 duration: 1h
 servings: 6
 ingredients:

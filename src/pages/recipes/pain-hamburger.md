@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Pain hamburger
 source: https://cuisinezavecdjouza.fr/article-pains-hamburger-express-51657489-html/amp/?fbclid=IwAR0KqM4prV5ibJFFlYuwcHAQM0_-rrw31-uMpmHHURLRH4vqhUQKdX2N1iI
-image: /static/img/pain-hamburger-express-photo-1.jpg
+image: /img/pain-hamburger-express-photo-1.jpg
 duration: "1 heure "
 servings: 8
 ingredients:

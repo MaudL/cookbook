@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Gâteaux aux pommes (rhum)
 source: https://www.papillesetpupilles.fr/2005/09/gteau-bernadette-aux-pommes.html/
-image: /static/img/gâteau-aux-pommes-a-la-sortie-du-four.jpg
+image: /img/gâteau-aux-pommes-a-la-sortie-du-four.jpg
 duration: 50min
 servings: 6
 ingredients:

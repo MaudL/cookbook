@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Dôme praliné et cœur framboise
 source: https://leschatsgourmets.com/recette-de-cuisine/gateaux/dome-chocolat-mousse-au-praline-et-coeur-coulant-framboise/
-image: /static/img/img_20210220_105339.jpg
+image: /img/img_20210220_105339.jpg
 duration: 12h
 servings: 4
 ingredients:

@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Bowlcake banane chocolat
 source: http://www.amandinecooking.com/bowlcake-banane-et-coeur-coulant-chocolat.html
-image: /static/img/b-2-.jpg
+image: /img/b-2-.jpg
 duration: 5min
 servings: 1
 ingredients:

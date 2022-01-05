@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Brioche suisse
 source: https://perleensucre.com/brioche-suisse-aux-pepites-de-chocolat/
-image: /static/img/img_20210417_215722.jpg
+image: /img/img_20210417_215722.jpg
 duration: 2h
 servings: 10
 ingredients:

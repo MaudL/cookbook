@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Nouilles à la mangue
 source: http://www.latableverte.fr/nouilles-soba-au-cresson-et-a-la-mangue/
-image: /static/img/img_20200521_135652.jpg
+image: /img/img_20200521_135652.jpg
 duration: 40min
 servings: 2
 ingredients:

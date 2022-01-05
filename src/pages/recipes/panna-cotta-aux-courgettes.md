@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Panna cotta aux courgettes
 source: https://couleurdevie.wordpress.com/2012/09/02/panna-cotta-aux-courgettes/
-image: /static/img/img_20210410_202214.jpg
+image: /img/img_20210410_202214.jpg
 duration: 5h
 servings: 5
 ingredients:

@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Rösti patate courgette
 source: https://www.cuisineactuelle.fr/recettes/roesti-pomme-de-terre-courgette-348686
-image: /static/img/img_20200424_201204.jpg
+image: /img/img_20200424_201204.jpg
 duration: 60min
 servings: 4
 ingredients:

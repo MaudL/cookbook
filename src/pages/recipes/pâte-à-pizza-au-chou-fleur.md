@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Pâte à pizza au chou-fleur
 source: https://www.marmiton.org/recettes/recette_pates-a-choufleur-et-mozzarella-facon-pizza_335699.aspx
-image: /static/img/21343_w648h414c1cx2000cy3000.jpg
+image: /img/21343_w648h414c1cx2000cy3000.jpg
 duration: 50 minutes
 servings: 4
 ingredients:

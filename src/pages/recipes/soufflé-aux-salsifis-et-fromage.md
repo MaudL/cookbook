@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Soufflé aux salsifis et fromage
 source: https://www.cuisineaz.com/recettes/souffle-aux-salsifis-et-au-fromage-89118.aspx
-image: /static/img/i82432-souffle-aux-salsifis-et-au-fromage.jpg
+image: /img/i82432-souffle-aux-salsifis-et-au-fromage.jpg
 duration: 1h
 servings: 5
 ingredients:

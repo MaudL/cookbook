@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Entremet tiramisu
 source: https://empreintesucree.fr/entremets-tiramisu/
-image: /static/img/tiramisu.jpg
+image: /img/tiramisu.jpg
 duration: 12h
 servings: 6
 ingredients:

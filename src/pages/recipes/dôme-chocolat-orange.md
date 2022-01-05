@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Dôme chocolat/orange
 source: https://san-marcelino.fr/le-choco-dome-a-lorange-de-noel/
-image: /static/img/img_20210221_145326.jpg
+image: /img/img_20210221_145326.jpg
 duration: 12h
 servings: 6
 ingredients:

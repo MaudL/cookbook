@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Gratin de polenta aux tomates cerises
 source: https://www.cuisineactuelle.fr/recettes/gratin-de-polenta-349588
-image: /static/img/pol.jpg
+image: /img/pol.jpg
 duration: 45min
 servings: 2
 ingredients:

@@ -1,9 +1,7 @@
 ---
 templateKey: 'recipe-post'
 title: Mousse au chocolat à l'aquafaba
-source: 
-- http://www.jojocuisine.fr/2018/05/mousse-au-chocolat-a-l-aquafaba-jus-des-pois-chiches-sans-oeuf.html 
-- https://vegan-pratique.fr/recettes/mousse-au-chocolat-aquafaba/https://vegan-pratique.fr/recettes/mousse-au-chocolat-aquafaba/
+source: http://www.jojocuisine.fr/2018/05/mousse-au-chocolat-a-l-aquafaba-jus-des-pois-chiches-sans-oeuf.html 
 image: /img/mousse-au-chocolat-a-laquafaba.jpg
 
 duration: 20min

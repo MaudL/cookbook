@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Pain
 source: Papa
-image: /static/img/pain.jpg
+image: /img/pain.jpg
 duration: 14h
 servings: 8
 ingredients:

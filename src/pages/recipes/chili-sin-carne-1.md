@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Chili sin carne
 source: https://www.cuisineaz.com/recettes/chili-sin-carne-aux-proteines-de-soja-texturees-100245.aspx
-image: /static/img/chili.jpeg
+image: /img/chili.jpeg
 duration: 30min
 servings: 4
 ingredients:

@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Boulettes de thon
 source: https://cuisine.journaldesfemmes.fr/recette/1014991-bouchees-de-thon-aperitives
-image: /static/img/img_20200424_201154.jpg
+image: /img/img_20200424_201154.jpg
 duration: 20min
 servings: 6
 ingredients:

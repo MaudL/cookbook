@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Brioche au levain
 source: https://www.painlevain.com/recette-de-brioche-levain-naturel/
-image: /static/img/brioche.jpg
+image: /img/brioche.jpg
 duration: 24h
 servings: 6
 ingredients:

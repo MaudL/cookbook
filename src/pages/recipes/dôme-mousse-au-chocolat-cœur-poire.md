@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Dôme mousse au chocolat / cœur poire
 source: https://www.gourmandiseries.fr/dome-chocolat-poire/
-image: /static/img/dome-chocolat-poire.jpg
+image: /img/dome-chocolat-poire.jpg
 duration: 6h
 servings: 4
 ingredients:

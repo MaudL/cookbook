@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Cake thon - fromage blanc
 source: https://www.fourchette-et-bikini.fr/recettes/recettes-minceur/cake-au-thon-et-tomates-sechees-allege-vite-fait.html
-image: /static/img/img_20200425_195529.jpg
+image: /img/img_20200425_195529.jpg
 duration: 50min
 servings: 4
 ingredients:

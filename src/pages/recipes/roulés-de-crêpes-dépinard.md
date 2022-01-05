@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Roulés de crêpes d'épinard
 source: https://www.ptitchef.com/recettes/aperitif/roules-de-crepes-d-epinard-au-fromage-frais-fid-1547552
-image: /static/img/roules-de-crepes-d-epinard-au-fromage-frais-md-66235p86689.jpg
+image: /img/roules-de-crepes-d-epinard-au-fromage-frais-md-66235p86689.jpg
 duration: 1h
 servings: 4
 ingredients:

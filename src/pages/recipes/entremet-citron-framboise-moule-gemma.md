@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Entremet citron framboise (moule gemma)
 source: https://www.encoreungateau.com/yellow-de-christophe-felder/
-image: /static/img/246963708_442528937396461_4730219245236961273_n.jpg
+image: /img/246963708_442528937396461_4730219245236961273_n.jpg
 duration: 12h
 servings: 6
 ingredients:

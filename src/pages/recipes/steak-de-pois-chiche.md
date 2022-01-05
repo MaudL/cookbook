@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Steak de pois chiche
 source: https://www.cuisineaz.com/recettes/burger-veggie-au-steak-de-pois-chiches-87474.aspx
-image: /static/img/i95896-burger-veggie-au-steak-de-pois-chiches.jpg
+image: /img/i95896-burger-veggie-au-steak-de-pois-chiches.jpg
 duration: 40 minutes
 servings: 4
 ingredients:

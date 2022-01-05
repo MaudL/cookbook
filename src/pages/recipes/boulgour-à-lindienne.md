@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Boulgour à l'indienne
 source: https://www.marmiton.org/recettes/recette_boulgour-a-l-indienne_20291.aspx
-image: /static/img/img_20200528_195239.jpg
+image: /img/img_20200528_195239.jpg
 duration: 20min
 servings: 2
 ingredients:

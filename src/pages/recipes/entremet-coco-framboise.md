@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Entremet coco/framboise
 source: https://www.cuisineactuelle.fr/recettes/entremets-framboise-coco-346643
-image: /static/img/img_20210515_132159.jpg
+image: /img/img_20210515_132159.jpg
 duration: 12h
 servings: 8
 ingredients:

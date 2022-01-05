@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Pâte brisée
 source: https://www.marmiton.org/recettes/recette_pate-brisee-vite-faite_31639.aspx
-image: /static/img/12788_w648h414c1cx983cy1500.jpg
+image: /img/12788_w648h414c1cx983cy1500.jpg
 duration: 10min
 servings: 6
 ingredients:

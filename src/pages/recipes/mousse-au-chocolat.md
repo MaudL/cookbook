@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Mousse au chocolat
 source: https://www.croquonslavie.fr/recettes/mousse-chocolat
-image: /static/img/2-mousse-chocolat-patisserie-empreinte-sucree.jpg
+image: /img/2-mousse-chocolat-patisserie-empreinte-sucree.jpg
 duration: 4h
 servings: 6
 ingredients:

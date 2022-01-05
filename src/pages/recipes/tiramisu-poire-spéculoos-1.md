@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Tiramisu poire - spéculoos
 source: https://www.marmiton.org/recettes/recette_verrine-de-poire-et-speculoos_254237.aspx
-image: /static/img/ti.jpg
+image: /img/ti.jpg
 duration: 3h
 servings: 2
 ingredients:

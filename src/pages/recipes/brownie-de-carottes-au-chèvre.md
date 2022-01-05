@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Brownie de carottes au chèvre
 source: https://cuisine.journaldesfemmes.fr/recette/318620-brownie-de-carottes-au-chevre
-image: /static/img/brownie.webp
+image: /img/brownie.webp
 duration: 1h
 servings: 6
 ingredients:

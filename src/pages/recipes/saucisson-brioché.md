@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Saucisson brioché
 source: https://www.marmiton.org/recettes/recette_saucisson-brioche-facile-et-rapide_24430.aspx
-image: /static/img/96547456_590504828253516_4411060403744800768_n.jpg
+image: /img/96547456_590504828253516_4411060403744800768_n.jpg
 duration: 50 minutes
 servings: 6
 ingredients:

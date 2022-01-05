@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Moelleux à l'orange
 source: https://www.fourchette-et-bikini.fr/recettes/recettes-minceur/moelleux-a-lorange-dietetique-aux-biscuits-a-la-cuillere.html
-image: /static/img/orange.jpg
+image: /img/orange.jpg
 duration: 1h
 servings: 6
 ingredients:
