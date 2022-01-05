@@ -1,17 +1,24 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import Tag from './Tag'
 
 interface Props {
   title: string
   tags: string[]
+  selectedTags: string[]
+  onRandomClick: () => void
   onTagsChange?: (tags: string[]) => void
   onSearchChange?: (searchStringselectedTags: string) => void
 }
 
-export default function Hero({ title, tags, onTagsChange, onSearchChange }: Props) {
-  const [selectedTags, setSelectedTags] = useState<string[]>([])
-
+export default function Hero({
+  title,
+  tags,
+  selectedTags,
+  onRandomClick,
+  onTagsChange,
+  onSearchChange,
+}: Props) {
   function handleTagSelected(tag: string) {
     let newSelectedTags
     if (selectedTags.includes(tag)) {
@@ -20,7 +27,6 @@ export default function Hero({ title, tags, onTagsChange, onSearchChange }: Prop
       newSelectedTags = [...selectedTags, tag]
     }
 
-    setSelectedTags(newSelectedTags)
     onTagsChange?.(newSelectedTags)
   }
 
@@ -47,6 +53,13 @@ export default function Hero({ title, tags, onTagsChange, onSearchChange }: Prop
           )
         })}
       </div>
+
+      <button
+        onClick={onRandomClick}
+        className="mt-4 rounded-md p-1 border border-white text-white text-sm"
+      >
+        Une recette au hasard ?
+      </button>
     </div>
   )
 }
