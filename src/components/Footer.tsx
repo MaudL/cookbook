@@ -6,7 +6,7 @@ export default function Footer() {
       <p className="text-">
         Fait avec amour par{' '}
         <a
-          className="text-sky-700"
+          className="text-primary-700"
           href="https://github.com/JulienUsson/"
           target="_blank"
           rel="noopener noreferrer"
