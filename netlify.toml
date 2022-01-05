@@ -4,3 +4,5 @@
 [build.environment]
   YARN_VERSION = "1.22.17"
   YARN_FLAGS = "--no-ignore-optional"
+[context.production]
+  environment = { GATSBY_CONCURRENT_DOWNLOAD = "15", GATSBY_CPU_COUNT = "1" }
