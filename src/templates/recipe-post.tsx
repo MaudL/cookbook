@@ -4,13 +4,13 @@ import React, { ReactNode, FunctionComponent } from 'react'
 import Helmet from 'react-helmet'
 
 import Content, { HTMLContent } from '../components/Content'
-import Footer from '../components/Footer'
 import Ingredients from '../components/Ingredients'
 import Tag from '../components/Tag'
 
 interface RecipePostTemplateProps {
   content: string | ReactNode
   title: string
+  source?: string
   duration: string
   servings: number
   ingredients: string[]
@@ -28,6 +28,7 @@ export const RecipePostTemplate = ({
   content,
   contentComponent,
   title,
+  source,
   duration,
   servings,
   ingredients,
@@ -60,8 +61,15 @@ export const RecipePostTemplate = ({
       </div>
 
       <div className="py-8 px-4 md:px-8 md:h-screen md:overflow-y-auto">
-        <p className="text-6xl mb-1">{title}</p>
-        <div className="flex flex-wrap gap-1 mb-4">
+        <p className="text-6xl">{title}</p>
+        {source?.startsWith('http') ? (
+          <a href={source} className="text-gray-300">
+            {source}
+          </a>
+        ) : source ? (
+          <p className="text-gray-300">{source}</p>
+        ) : null}
+        <div className="flex flex-wrap gap-1 mb-4  mt-1">
           {tags.map(tag => (
             <Tag key={tag} name={tag} />
           ))}
@@ -91,6 +99,7 @@ export default function RecipePost({ data }: Props) {
       image={recipe.frontmatter.image?.childImageSharp.fluid.src}
       tags={recipe.frontmatter.tags}
       title={recipe.frontmatter.title}
+      source={recipe.frontmatter.source}
     />
   )
 }
@@ -102,6 +111,7 @@ interface Props {
       html: string
       frontmatter: {
         title: string
+        source?: string
         duration: string
         servings: number
         ingredients: string[]
@@ -121,6 +131,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        source
         duration
         servings
         ingredients

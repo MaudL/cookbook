@@ -16,6 +16,7 @@ const RecipePostPreview = ({ entry, getAsset, widgetFor }) => {
       subRecipes={subRecipes ? subRecipes.toJS() : []}
       image={getAsset(entry.getIn(['data', 'image']))}
       tags={tags ? tags.toJS() : []}
+      source={entry.getIn(['data', 'source'])}
     />
   )
 }
