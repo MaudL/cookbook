@@ -1,4 +1,4 @@
-const title = 'Cookbook'
+const title = 'Les recettes de Maud'
 
 module.exports = {
   siteMetadata: {

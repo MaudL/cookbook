@@ -71,11 +71,11 @@ export default function IndexPage({ data }: Props) {
   return (
     <>
       <Helmet>
-        <title>{data.markdownRemark.frontmatter.title}</title>
+        <title>{data.site.siteMetadata.title}</title>
       </Helmet>
 
       <Hero
-        title={data.markdownRemark.frontmatter.title}
+        title={data.site.siteMetadata.title}
         tags={tags || []}
         onSearchChange={setSearchString}
         onTagsChange={setSelectedTags}
@@ -90,8 +90,8 @@ export default function IndexPage({ data }: Props) {
 
 interface Props {
   data: {
-    markdownRemark: {
-      frontmatter: {
+    site: {
+      siteMetadata: {
         title: string
       }
     }
@@ -119,14 +119,9 @@ interface Props {
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-      frontmatter {
+    site {
+      siteMetadata {
         title
-        image {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-          }
-        }
       }
     }
     allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "recipe-post" } } }) {
