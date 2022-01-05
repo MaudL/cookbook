@@ -1,6 +1,8 @@
+const title = 'Cookbook'
+
 module.exports = {
   siteMetadata: {
-    title: 'Cookbook',
+    title,
   },
   plugins: [
     {
@@ -59,6 +61,19 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: title,
+        short_name: title,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#0EA5E9`,
+        display: `standalone`,
+        icon: 'static/icon.png',
+      },
+    },
+    'gatsby-plugin-offline',
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }
