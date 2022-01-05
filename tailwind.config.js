@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: colors.sky,
+        primary: colors.cyan,
       },
       height: {
         'screen/2': '50vh',

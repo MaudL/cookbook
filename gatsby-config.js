@@ -68,7 +68,7 @@ module.exports = {
         short_name: title,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#0EA5E9`,
+        theme_color: `#06B6D4`,
         display: `standalone`,
         icon: 'static/icon.png',
       },
