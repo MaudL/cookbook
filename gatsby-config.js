@@ -23,6 +23,10 @@ module.exports = {
     },
     'gatsby-plugin-postcss',
     {
+      resolve: `gatsby-plugin-purgecss`,
+      options: { tailwind: true },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
