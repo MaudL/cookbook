@@ -48,9 +48,13 @@ export const RecipePostTemplate = ({
           <BackIcon className="h-5 w-5 inline" /> Retour
         </Link>
         {typeof image === 'string' ? (
-          <img className="h-48 w-full object-cover rounded-md border border-white" src={image} />
+          <img className="h-48 w-full object-cover rounded-md border-2 border-white" src={image} />
         ) : image ? (
-          <GatsbyImage className="h-48 rounded-md border border-white" image={image} alt={title} />
+          <GatsbyImage
+            className="h-48 rounded-md border-2 border-white"
+            image={image}
+            alt={title}
+          />
         ) : null}
         {duration && (
           <p>
