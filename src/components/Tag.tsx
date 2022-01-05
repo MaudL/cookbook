@@ -14,7 +14,7 @@ export default function Tag({ name, selected, color: colorProp, onClick }: Props
   const color = colorProp ?? colorHash
   return (
     <button
-      className="border rounded-full px-3 text-white text-sm"
+      className="border rounded-full px-3 text-white text-sm whitespace-nowrap"
       style={{
         backgroundColor: selected ? colorHash : undefined,
         color: selected ? '#fff' : color,

@@ -39,7 +39,7 @@ export default function Hero({ title, image, tags, onTagsChange, onSearchChange 
         onChange={e => onSearchChange?.(e.target.value)}
       />
 
-      <div className="flex flex-row flex-wrap justify-center mt-4 space-x-2 md:w-1/2">
+      <div className="flex flex-row flex-wrap justify-center mt-4 gap-2 md:w-1/2">
         {tags.map(tag => {
           const isSelected = selectedTags.includes(tag)
           return (

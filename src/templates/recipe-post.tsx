@@ -4,6 +4,7 @@ import React, { ReactNode, FunctionComponent } from 'react'
 import Helmet from 'react-helmet'
 
 import Content, { HTMLContent } from '../components/Content'
+import Footer from '../components/Footer'
 import Ingredients from '../components/Ingredients'
 import Tag from '../components/Tag'
 
@@ -40,13 +41,13 @@ export const RecipePostTemplate = ({
   return (
     <div className="flex flex-col md:flex-row">
       {helmet || ''}
-      <div className="left-panel md:min-w-[300px] md:max-w-[300px] md:h-screen p-8 bg-purple-700 text-white text-xl space-y-4">
+      <div className="left-panel md:min-w-[300px] md:max-w-[300px] md:h-screen p-8 bg-sky-500 text-white text-xl space-y-4">
         <Link to="/">
           <BackIcon className="h-5 w-5 inline" /> Retour
         </Link>
         {image && (
           <div
-            className="h-80 md:h-48 bg-center bg-cover"
+            className="h-48 bg-center bg-cover rounded-md border border-white"
             style={{ backgroundImage: `url(${image})` }}
           />
         )}
@@ -58,9 +59,9 @@ export const RecipePostTemplate = ({
         <Ingredients ingredients={ingredients} servings={servings} subRecipes={subRecipes} />
       </div>
 
-      <div className="p-8 h-screen md:overflow-y-auto">
+      <div className="py-8 px-4 md:px-8 md:h-screen md:overflow-y-auto">
         <p className="text-6xl mb-1">{title}</p>
-        <div className="spacing-x-2 mb-4">
+        <div className="flex flex-wrap gap-1 mb-4">
           {tags.map(tag => (
             <Tag key={tag} name={tag} />
           ))}

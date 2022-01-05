@@ -55,7 +55,7 @@ export default function Ingredients({ ingredients, servings: servingsProp, subRe
     <>
       <div>
         <p className="font-bold">Personnes :</p>
-        <div className="flex flex-row align-center space-x-4">
+        <div className="flex flex-row align-center gap-x-4">
           <button
             onClick={() => {
               if (servings > 1) {
