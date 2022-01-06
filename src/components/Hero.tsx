@@ -36,12 +36,11 @@ export default function Hero({
     <div className="bg-food h-screen/2 pb-10vh flex flex-col items-center justify-center">
       <p className="text-4xl md:text-6xl text-white text-center mb-4 md:mb-8">{title}</p>
       <input
-        className="border border-white bg-transparent rounded-md px-4 py-3 focus:outline-none text-lg text-white placeholder:text-white"
+        className="border hover:border-2 hover:-m-[1px] border-white bg-transparent rounded-md px-4 py-3 focus:outline-none text-lg text-white placeholder:text-white"
         placeholder="Rechercher une recette"
         value={search}
         onChange={(e) => onSearchChange?.(e.target.value)}
       />
-
       <div className="flex flex-row flex-wrap justify-center mt-4 gap-2 md:w-1/2">
         {tags.map((tag) => {
           const isSelected = selectedTags.includes(tag)
@@ -56,10 +55,10 @@ export default function Hero({
           )
         })}
       </div>
-
+      <div className="mt-4" />
       <button
         onClick={onRandomClick}
-        className="mt-4 rounded-md p-1 border border-white text-white text-sm"
+        className="rounded-md p-1 border hover:border-2 hover:-m-[1px] hover:font-bold border-white text-white text-sm"
       >
         Une recette au hasard ?
       </button>

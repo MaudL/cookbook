@@ -18,19 +18,19 @@ interface Props {
 export default function RecipesList({ recipes, selectedTags }: Props) {
   if (recipes.length === 0) {
     return (
-      <div className="-translate-y-10vh h-48 md:mx-8 p-2 md:p-4 rounded-md bg-white border border-gray-200 flex justify-center items-center">
+      <div className="-translate-y-10vh h-48 md:mx-8 p-2 md:p-4 rounded-md bg-white border border-gray-300 flex justify-center items-center">
         <p>Aucune recette trouvée.</p>
       </div>
     )
   }
 
   return (
-    <div className="-translate-y-10vh md:mx-8 p-2 md:p-4 rounded-md bg-white border border-gray-200 grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    <div className="-translate-y-10vh md:mx-8 p-2 md:p-4 rounded-md bg-white border border-gray-300 grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {recipes.map((recipe) => (
         <Link
           key={recipe.id}
           to={recipe.url}
-          className="border border-gray-200 rounded-md overflow-hidden"
+          className="border border-gray-300 rounded-md overflow-hidden hover:border-2 hover:-m-[1px]"
         >
           {recipe.image ? (
             <GatsbyImage className="h-48 border-b" image={recipe.image} alt={recipe.title} />

@@ -44,7 +44,7 @@ export const RecipePostTemplate = ({
     <div className="flex flex-col md:flex-row">
       {helmet || ''}
       <div className="bg-food md:min-w-[300px] md:max-w-[300px] md:h-screen p-8 text-white text-xl space-y-4">
-        <Link to="/">
+        <Link to="/" className="hover:underline">
           <BackIcon className="h-5 w-5 inline" /> Retour
         </Link>
         {typeof image === 'string' ? (
@@ -67,7 +67,7 @@ export const RecipePostTemplate = ({
       <div className="py-8 px-4 md:px-8 md:h-screen md:overflow-y-auto">
         <p className="text-6xl">{title}</p>
         {source?.startsWith('http') ? (
-          <a href={source} className="text-gray-300">
+          <a href={source} className="text-gray-300 hover:underline">
             {source}
           </a>
         ) : source ? (

@@ -6,7 +6,7 @@ export default function Footer() {
       <p className="text-">
         Fait avec amour par{' '}
         <a
-          className="text-primary-700"
+          className="text-primary-700 hover:underline"
           href="https://github.com/JulienUsson/"
           target="_blank"
           rel="noopener noreferrer"
@@ -14,7 +14,7 @@ export default function Footer() {
           Julien Usson
         </a>
       </p>
-      <a className="text-gray-300" href="/admin/" color="textSecondary">
+      <a className="text-gray-300 hover:underline" href="/admin/" color="textSecondary">
         Admin
       </a>
     </div>
