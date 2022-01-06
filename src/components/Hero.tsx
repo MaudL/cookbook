@@ -6,6 +6,7 @@ interface Props {
   title: string
   tags: string[]
   selectedTags: string[]
+  search: string
   onRandomClick: () => void
   onTagsChange?: (tags: string[]) => void
   onSearchChange?: (searchStringselectedTags: string) => void
@@ -15,6 +16,7 @@ export default function Hero({
   title,
   tags,
   selectedTags,
+  search,
   onRandomClick,
   onTagsChange,
   onSearchChange,
@@ -36,6 +38,7 @@ export default function Hero({
       <input
         className="border border-white bg-transparent rounded-md px-4 py-3 focus:outline-none text-lg text-white placeholder:text-white"
         placeholder="Rechercher une recette"
+        value={search}
         onChange={(e) => onSearchChange?.(e.target.value)}
       />
 

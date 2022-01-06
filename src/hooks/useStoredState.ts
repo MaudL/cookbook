@@ -1,17 +1,17 @@
-import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react'
+import { Dispatch, SetStateAction, useEffect, useState } from 'react'
 import { useDebounce } from 'use-debounce'
+
+const isBrowser = typeof window !== 'undefined'
 
 export default function useStoredState<T>(
   key: string | undefined,
   defaultValue: T,
-  options?: { storage?: Storage },
 ): [T, Dispatch<SetStateAction<T>>] {
-  const storageRef = useRef(options?.storage || window.sessionStorage)
   const state = useState<T>(() => {
-    if (!key) return defaultValue
+    if (!key || !isBrowser) return defaultValue
 
     try {
-      const item = storageRef.current.getItem(key)
+      const item = window.sessionStorage.getItem(key)
       return item ? JSON.parse(item) : defaultValue
     } catch (error) {
       console.error(error)
@@ -21,12 +21,14 @@ export default function useStoredState<T>(
 
   const [debouncedState] = useDebounce(state[0], 300)
   useEffect(() => {
-    if (key) {
-      try {
-        storageRef.current.setItem(key, JSON.stringify(debouncedState))
-      } catch (error) {
-        console.error(error)
-      }
+    if (!key || !isBrowser) {
+      return
+    }
+
+    try {
+      window.sessionStorage.setItem(key, JSON.stringify(debouncedState))
+    } catch (error) {
+      console.error(error)
     }
   }, [debouncedState, key])
 

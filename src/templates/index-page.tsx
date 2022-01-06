@@ -1,7 +1,7 @@
 import Fuse from 'fuse.js'
 import { graphql, navigate } from 'gatsby'
 import { IGatsbyImageData } from 'gatsby-plugin-image'
-import React, { useState, useMemo } from 'react'
+import React, { useMemo } from 'react'
 import Helmet from 'react-helmet'
 
 import Footer from '../components/Footer'
@@ -26,7 +26,7 @@ export interface Recipe {
 }
 
 export default function IndexPage({ data }: Props) {
-  const [searchString, setSearchString] = useState('')
+  const [searchString, setSearchString] = useStoredState('SEARCH_STRING', '')
   const [selectedTags, setSelectedTags] = useStoredState<string[]>('SELECTED_TAGS', [])
 
   const recipes: Recipe[] = data.allMarkdownRemark.edges.map((edge) => ({
@@ -73,7 +73,8 @@ export default function IndexPage({ data }: Props) {
     if (filteredRecipes.length === 0) {
       return
     }
-    const randomRecipe = filteredRecipes[Math.floor(Math.random() * filteredRecipes.length)]
+    const randomIndex = Math.round(Math.random() * (filteredRecipes.length - 1))
+    const randomRecipe = filteredRecipes[randomIndex]
     navigate(randomRecipe.url)
   }
 
@@ -87,9 +88,10 @@ export default function IndexPage({ data }: Props) {
         title={data.site.siteMetadata.title}
         tags={tags || []}
         selectedTags={selectedTags}
-        onRandomClick={handleRandomClick}
-        onSearchChange={setSearchString}
         onTagsChange={setSelectedTags}
+        search={searchString}
+        onSearchChange={setSearchString}
+        onRandomClick={handleRandomClick}
       />
 
       <RecipesList recipes={filteredRecipes} selectedTags={selectedTags} />
