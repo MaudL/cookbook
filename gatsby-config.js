@@ -59,6 +59,13 @@ module.exports = {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
+        customizeWebpackConfig: (config, { plugins }) => {
+          config.plugins.push(
+            plugins.define({
+              __MANIFEST_PLUGIN_HAS_LOCALISATION__: JSON.stringify('false'),
+            }),
+          )
+        },
       },
     },
     {
