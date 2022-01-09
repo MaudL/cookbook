@@ -43,7 +43,7 @@ export const RecipePostTemplate = ({
   return (
     <div className="flex flex-col md:flex-row">
       {helmet || ''}
-      <div className="bg-food md:min-w-[300px] md:max-w-[300px] md:h-screen p-8 text-white text-xl space-y-4">
+      <div className="bg-food md:min-w-[300px] md:max-w-[300px] md:h-screen p-8 text-white text-xl space-y-4 md:overflow-y-auto">
         <Link to="/" className="hover:underline">
           <BackIcon className="h-5 w-5 inline" /> Retour
         </Link>
