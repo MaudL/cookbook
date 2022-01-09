@@ -13,6 +13,7 @@ ingredients:
   - 1 gousse d’ail
   - 100g d’huile d’olive
 tags:
+  - salé
   - végé
 ---
 
