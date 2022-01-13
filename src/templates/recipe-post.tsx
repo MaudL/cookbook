@@ -100,6 +100,7 @@ export default function RecipePost({ data }: Props) {
       duration={recipe.frontmatter.duration}
       servings={recipe.frontmatter.servings}
       ingredients={recipe.frontmatter.ingredients}
+      subRecipes={recipe.frontmatter.subRecipes}
       image={recipe.frontmatter.image?.childImageSharp.gatsbyImageData}
       tags={recipe.frontmatter.tags}
       title={recipe.frontmatter.title}
@@ -119,6 +120,10 @@ interface Props {
         duration: string
         servings: number
         ingredients: string[]
+        subRecipes: {
+          title?: string
+          ingredients?: string[]
+        }[]
         image?: {
           childImageSharp: {
             gatsbyImageData: IGatsbyImageData
@@ -141,6 +146,10 @@ export const pageQuery = graphql`
         duration
         servings
         ingredients
+        subRecipes {
+          title
+          ingredients
+        }
         image {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
