@@ -15,6 +15,8 @@ ingredients:
   - " 2cs Rhum"
   - " 2cs lait"
   - " sel"
+tags:
+  - sucré
 ---
 P﻿our 24/28 bugnes :
 
