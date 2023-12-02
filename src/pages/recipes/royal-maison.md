@@ -2,8 +2,8 @@
 templateKey: recipe-post
 title: Royal maison
 image: /img/royal.jpg
-duration: 3h
-servings: 6
+duration: 2h
+servings: 8
 ingredients:
   - Mousse au chocolat
   - " Génoise au cacao"
@@ -22,6 +22,10 @@ subRecipes:
       - " 75g de farine"
       - " 100g de sucre"
       - " 50g de cacao"
+  - title: Chantilly
+    ingredients:
+      - xg de crème liquide 30%MG (chantilly)
+      - " Xg sucre glace"
 tags:
   - sucré
 ---
