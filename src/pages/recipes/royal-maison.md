@@ -12,10 +12,10 @@ ingredients:
 subRecipes:
   - title: Mousse au chocolat
     ingredients:
-      - xg de chocolat noir
-      - " xg de crème liquide 30%MG (chantilly)"
-      - " xg de crème liquide 30%MG (chocolat)"
-      - " 0.5g gélatine"
+      - 250g de chocolat noir
+      - " 400g de crème liquide 30%MG (chantilly)"
+      - " 120g de crème liquide 30%MG (chocolat)"
+      - " 1g gélatine"
   - title: Génoise au cacao
     ingredients:
       - 6 oeufs
@@ -24,8 +24,10 @@ subRecipes:
       - " 50g de cacao"
   - title: Chantilly
     ingredients:
-      - xg de crème liquide 30%MG (chantilly)
-      - " Xg sucre glace"
+      - 200g de crème liquide 30%MG (chantilly)
+      - " 80g de crème liquide 30%MG"
+      - 30g sucre glace
+      - " 1g gélatine"
 tags:
   - sucré
 ---
