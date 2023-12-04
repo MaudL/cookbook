@@ -5,10 +5,15 @@ image: /img/royal.jpg
 duration: 2h
 servings: 8
 ingredients:
-  - Mousse au chocolat
-  - " Génoise au cacao"
-  - Chantilly
-  - Déco
+  - 750g de crème liquide 30%MG
+  - " 175g chocolat noir 66%"
+  - " 75g chocolat noir 52%"
+  - " 2g gélatine"
+  - " 6 oeufs"
+  - " 75g farine"
+  - 100g sucre
+  - " 50g cacao"
+  - " 25g sucre glace"
 subRecipes:
   - title: Mousse au chocolat
     ingredients:
@@ -34,10 +39,10 @@ tags:
 P﻿our la génoise au cacao :
 
 1. Préchauffer le four à 180°C chaleur tournante et sortir le beurre (pour moule). Séparer le blanc du jaune de la moitié des oeufs. Tamiser la farine dans un bol.
-2. Au batteur électrique, fouetter tous les jaunes d'oeufs + 2e moitié des blancs avec la moitié du sucre jusqu'à ce que le mélange blanchisse et mousse.
+2. Au batteur électrique, fouetter tous les jaunes d'oeufs + 2e moitié des blancs avec la moitié du sucre jusqu'à ce que le mélange blanchisse et mousse. Ajouter le cacao et mélanger.
 3. Monter en neige la moitié des blancs en leur incorporant petit à petit le reste du sucre.
 4. Incorporer les blancs aux jaunes délicatement. Ajouter la farine tamisée en versant en pluie.
-5. Dans le moule à manquer, tapisser de papier sulfurisé + beurre. Verser la moitié de l'appareil. Cuire pendant 10 min. Remettre du papier sulfurisé + beurre. Cuire la 2e moitié 10 min.
+5. Dans le moule à manquer, tapisser de papier sulfurisé + beurre. Verser la moitié de l'appareil. Cuire pendant 9/10 min. Remettre du papier sulfurisé + beurre. Cuire la 2e moitié 9/10 min.
 
 P﻿our la mousse au chocolat :
 
@@ -53,5 +58,5 @@ P﻿our le montage :
 
 P﻿our la chantilly :
 
-1. M﻿ettre la crème liquide dans le bol du robot. Placer le bol et son fouet au congélateur pendant environ 10 min. Préparer le sucre glace dans un verre.
+1. Préparer la gélatine. M﻿ettre la crème liquide dans le bol du robot. Placer le bol et son fouet au congélateur pendant environ 10 min. Préparer le sucre glace dans un verre.
 2. M﻿onter la crème refroidie en chantilly en ajoutant le sucre glace petit à petit. Attendre que la crème durcisse / mettre au frigo. Décorer le gâteau (poche à douille.
