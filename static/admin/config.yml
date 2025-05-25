@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: MaudL/cookbook-gatsby
+  repo: MaudL/cookbook
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
     update: "Update {{collection}} “{{slug}}”"
