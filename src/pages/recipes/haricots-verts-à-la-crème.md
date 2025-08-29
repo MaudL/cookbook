@@ -15,6 +15,7 @@ ingredients:
   - poivre
 tags:
   - salé
+  - végé
 ---
 1. F﻿aire cuire les haricots et les laisser refroidir
 2. D﻿ans un saladier, mettre le vinaigre, la crème, l'échalotte, l'ail, sel et poivre.
