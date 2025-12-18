@@ -3,7 +3,7 @@ templateKey: recipe-post
 title: Bûche praliné et chocolat
 image: /img/12788_w648h414c1cx983cy1500.jpg
 duration: "1"
-servings: 5
+servings: 6
 ingredients:
   - Voir sous-recettes
 subRecipes:
@@ -16,6 +16,10 @@ subRecipes:
       - " 3 jaunes d'oeufs"
       - " 100g chocolat praliné"
       - " 1 feuille de gélatine"
+      - " ou"
+      - " 1 feuille de gélatine"
+      - " 150g de praliné"
+      - 200cL crème
   - title: Biscuit dacquoise noisettes
     ingredients:
       - 2 blancs d'oeuf
@@ -34,6 +38,8 @@ D﻿ome
 m﻿ousse chocolat
 
 I﻿nsert praliné
+
+https://www.guydemarle.com/recettes/buche-chocolat-et-insert-praline-45502
 
 S﻿treusel et biscuit ? 
 
