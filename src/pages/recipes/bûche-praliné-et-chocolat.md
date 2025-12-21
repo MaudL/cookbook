@@ -7,19 +7,14 @@ servings: 6
 ingredients:
   - Voir sous-recettes
 subRecipes:
-  - title: Dôme chocolat ?
-    ingredients:
-      - "croustillant ? "
   - title: Insert crémeux praliné
     ingredients:
-      - 190g crème liquide 30%MG
-      - " 3 jaunes d'oeufs"
-      - " 100g chocolat praliné"
-      - " 1 feuille de gélatine"
-      - " ou"
-      - " 1 feuille de gélatine"
+      - 1 feuille de gélatine
       - " 150g de praliné"
       - 200cL crème
+  - title: Streusel
+    ingredients:
+      - Voir recette streusel
   - title: Biscuit dacquoise noisettes
     ingredients:
       - 2 blancs d'oeuf
