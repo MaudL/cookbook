@@ -11,7 +11,13 @@ ingredients:
 subRecipes:
   - title: Roulé
     ingredients:
-      - Voir recette de roulé / génoise
+      - 4 oeufs
+      - " 125g sucre"
+      - " 1 sachet sucre vanillé"
+      - " 75g maïzena"
+      - " 25g de farine"
+      - " 0.5 sachet de levure"
+      - " sel"
   - title: Crème pâtissière
     ingredients:
       - 2 oeufs
