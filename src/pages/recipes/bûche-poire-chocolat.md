@@ -1,6 +1,6 @@
 ---
 templateKey: recipe-post
-title: Bûche poire chocolat
+title: Bûche mousse poire chocolat
 source: https://www.facebook.com/watch/?v=675020094622121
 image: /img/buche-de-noel..png
 duration: 3h
