@@ -2,7 +2,7 @@
 templateKey: recipe-post
 title: Velouté de cèpes
 source: https://www.atelierdeschefs.fr/recettes/13518/veloute-de-cepes/
-image: /img/2-mousse-chocolat-patisserie-empreinte-sucree.jpg
+image: /img/69149f66-7ab6-4081-beca-3edf208c4ca3.jpg
 duration: 40min
 servings: 6
 ingredients:
