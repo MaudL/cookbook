@@ -17,7 +17,7 @@ ingredients:
 tags:
   - salé
 ---
-1. E﻿mincer les échalotes et les cèpes. Ciseler le persil et hacher l'ail. Préparer le bouillon
+1. E﻿mincer les échalotes et les cèpes. Ciseler le persil et hacher l'ail. Préparer le bouillon.
 2. F﻿aire fondre le beurre dans une cocotte, faire suer les échalotes et l'ail avec une pincée de sel pendant 2 min. Ajouter les cèpes, saler et laisser suer pendant 5 min
 3. M﻿ouiller avec le bouillon de volaille et laisser cuire à feu doux pendant 20 min.
 4. A﻿jouter la crème , porter à ébullition et éteindre le feu. Mixer au mixeur plongeant et rectifier l'assaisonnement
