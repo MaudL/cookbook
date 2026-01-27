@@ -101,7 +101,7 @@ export default function RecipePost({ data }: Props) {
       servings={recipe.frontmatter.servings}
       ingredients={recipe.frontmatter.ingredients}
       subRecipes={recipe.frontmatter.subRecipes}
-      image={recipe.frontmatter.image?.childImageSharp.gatsbyImageData}
+      image={recipe.frontmatter.image}
       tags={recipe.frontmatter.tags}
       title={recipe.frontmatter.title}
       source={recipe.frontmatter.source}
@@ -124,11 +124,7 @@ interface Props {
           title?: string
           ingredients?: string[]
         }[]
-        image?: {
-          childImageSharp: {
-            gatsbyImageData: IGatsbyImageData
-          }
-        }
+        image?: string
         tags: string[]
       }
     }
@@ -150,11 +146,7 @@ export const pageQuery = graphql`
           title
           ingredients
         }
-        image {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-          }
-        }
+        image
         tags
       }
     }

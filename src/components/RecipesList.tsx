@@ -1,5 +1,4 @@
 import { Link } from 'gatsby'
-import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image'
 import React from 'react'
 
 import Tag from '../components/Tag'
@@ -7,7 +6,7 @@ import Tag from '../components/Tag'
 interface Props {
   recipes: Array<{
     id: string
-    image?: IGatsbyImageData
+    image?: string
     title: string
     tags: string[]
     url: string
@@ -33,7 +32,11 @@ export default function RecipesList({ recipes, selectedTags }: Props) {
           className="border border-gray-300 rounded-md overflow-hidden hover:border-2 hover:-m-[1px]"
         >
           {recipe.image ? (
-            <GatsbyImage className="h-48 border-b" image={recipe.image} alt={recipe.title} />
+            <img 
+              className="h-48 w-full object-cover border-b" 
+              src={recipe.image} 
+              alt={recipe.title} 
+            />
           ) : (
             <div className="h-48 border-b bg-gray-300" />
           )}

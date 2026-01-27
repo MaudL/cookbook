@@ -32,21 +32,23 @@ export default function IndexPage({ data }: Props) {
   const recipes: Recipe[] = data.allMarkdownRemark.edges.map((edge) => ({
     id: edge.node.id,
     title: edge.node.frontmatter.title,
-    tags: edge.node.frontmatter.tags,
-    image: edge.node.frontmatter.image?.childImageSharp.gatsbyImageData,
+    tags: edge.node.frontmatter.tags || [],
+    image: edge.node.frontmatter.image,
     url: edge.node.fields.slug,
   }))
 
   const tags = useMemo(() => {
-    if (!recipes) {
-      return undefined
-    }
-    const tags = recipes.reduce((acc, recipe) => {
+  if (!recipes) {
+    return undefined
+  }
+  const tags = recipes.reduce((acc, recipe) => {
+    if (recipe.tags) {  // Add this check
       recipe.tags.forEach((t) => acc.add(t))
-      return acc
-    }, new Set<string>())
-    return [...tags].sort()
-  }, [recipes])
+    }
+    return acc
+  }, new Set<string>())
+  return [...tags].sort()
+}, [recipes])
 
   const filteredRecipes = useMemo(() => {
     if (!searchString && selectedTags.length === 0) {
@@ -118,11 +120,7 @@ interface Props {
           frontmatter: {
             title: string
             tags: string[]
-            image?: {
-              childImageSharp: {
-                gatsbyImageData: IGatsbyImageData
-              }
-            }
+            image?: string
           }
         }
       }>
@@ -147,11 +145,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             tags
-            image {
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
-            }
+            image
           }
         }
       }

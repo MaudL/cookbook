@@ -34,18 +34,9 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          {
-            resolve: 'gatsby-remark-relative-images',
-            options: {
-              name: 'uploads',
-            },
-          },
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 1024,
-            },
-          },
+          // Remove gatsby-remark-relative-images
+          // Remove gatsby-remark-images
+          // Keep only copy-linked-files if you need it for other assets
           {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {
