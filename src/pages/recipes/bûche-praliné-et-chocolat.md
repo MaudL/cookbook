@@ -1,8 +1,9 @@
 ---
 templateKey: recipe-post
 title: Bûche praliné et chocolat
-image: /img/12788_w648h414c1cx983cy1500.jpg
-duration: "1"
+source: https://www.marmiton.org/recettes/recette_buche-de-noel-praline-chocolat-de-mon-arriere-grand-mere_51719.aspx
+image: /img/0b4ca555-2911-437b-80d6-25635b9d155c.jpg
+duration: 1h
 servings: 6
 ingredients:
   - Voir sous-recettes
@@ -27,6 +28,8 @@ subRecipes:
       - 300g crème liquide 30%MG
       - " 200g chocolat"
       - " 90g mascarpone"
+tags:
+  - sucré
 ---
 D﻿ome
 
